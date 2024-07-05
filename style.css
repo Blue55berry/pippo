@@ -119,3 +119,37 @@ span{
     border-radius: 6px;
     padding: 5px;
 }
+#abi{
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: 80px;
+    color: black;
+}
+.over-layout{
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 1600px;
+    top: 0;
+    display: none;
+}
+.popup-box{
+    top: 0;
+    position: absolute;
+    border: solid 1px white;
+    text-align: center;
+   left: 40%;
+   margin-top: 300px;
+   padding: 40px;
+   color: white;
+   background-color: pink;
+   display: none;
+}
+.btz{
+    display: flex;
+    float: right;
+   margin-top: 5px;
+   margin-right: 6px;
+}
