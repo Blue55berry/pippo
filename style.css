@@ -194,6 +194,45 @@ body{
     font-size: 1rem;
     color: black;
 }
+#cancel{
+        cursor: pointer;
+        background-color: #030303;
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 8px;
+    }
+        #cancel:hover{
+        background-color: violet;
+        display: block;
+    }
+    .popup-box{
+        background-color: rgb(133, 5, 105);
+        color: black;
+        border-radius: 20px;
+        display: block;
+        
+    }
+    .in{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+   }
+   .in:hover{
+    background-color: violet;
+    display: block;
+   }
+   .btnx:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    display: block;
+   }
+    
 .btnx{
     display: block;
 }
@@ -323,6 +362,7 @@ body{
         padding: 6px;
         border: none;
         border-radius: 8px;
+        
     }
     #cancel:hover{
         background-color: violet;
