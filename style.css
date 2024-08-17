@@ -182,6 +182,7 @@ body{
     object-fit: cover;
     height: 100%;
     background-repeat: no-repeat;
+    background-position:center;
 }
 .cake2{
     display: none;
@@ -234,6 +235,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height:1600px;
+    background-position:center;
 }
 .cake{
     margin-left: 200px;
@@ -289,6 +291,7 @@ body{
 }
 @media(min-width:768px){
     body{
+        background-position:center;
         background-image: url("Untitled\ design\ \(2\).png");
        height:1600px;
        object-fit: cover;
