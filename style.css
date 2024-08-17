@@ -193,14 +193,11 @@ body{
     font-size: 1rem;
     color: black;
 }
-.popup-box{
-       display: none;
-    }
-.over-layout{
-    display: none;
-}
 .btnx{
-    display: none;
+    display: block;
+}
+.cut{
+    display:none;
 }
 .hello{
    backdrop-filter: blur(10px);
@@ -236,7 +233,7 @@ body{
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
-   overflow: hidden;
+    height:1600px;
 }
 .cake{
     margin-left: 200px;
@@ -293,10 +290,10 @@ body{
 @media(min-width:768px){
     body{
         background-image: url("Untitled\ design\ \(2\).png");
-       
+       height:1600px;
        object-fit: cover;
         background-repeat: no-repeat;
-        overflow: hidden;
+        
     }
     .cake{
         margin-top: 95px;
@@ -347,6 +344,7 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         object-fit: cover;
+        height:1600px;
     
     }
     .cake{
