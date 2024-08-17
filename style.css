@@ -179,7 +179,7 @@ span{
 @media(max-width:576px){
 body{
     background-image: url("Untitled\ design\ \(4\).png");
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     background-repeat: no-repeat;
 }
