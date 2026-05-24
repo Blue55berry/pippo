@@ -13,6 +13,52 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="dark-theme">
+    <!-- Video Preloader -->
+    <style>
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000; /* Fallback */
+            z-index: 999999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+        }
+        .loader-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* This makes the video seamlessly fill the entire screen */
+        }
+    </style>
+    <div id="video-loader" class="loader-container">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" class="loader-video">
+            <source src="White Bear.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script>
+        const loader = document.getElementById('video-loader');
+        // Check if we've already shown the spinner in this browser session
+        if (!sessionStorage.getItem('gk_cakes_spinner_shown')) {
+            sessionStorage.setItem('gk_cakes_spinner_shown', 'true');
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    if(loader) {
+                        loader.style.opacity = '0';
+                        loader.style.visibility = 'hidden';
+                        setTimeout(() => loader.remove(), 800);
+                    }
+                }, 1200);
+            });
+        } else {
+            // Instantly remove the spinner if it's already been shown
+            if (loader) loader.remove();
+        }
+    </script>
+    
     <!-- Navbar with Glassmorphism -->
     <nav class="navbar navbar-expand-lg glass-nav sticky-top">
         <div class="container nav-container">
