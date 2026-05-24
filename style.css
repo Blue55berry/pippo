@@ -1,12 +1,12 @@
 :root {
-    --bg-color: #050b14; /* Deep, intense dark background */
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-color: #38bdf8;
-    --accent-secondary: #818cf8;
-    --accent-tertiary: #c084fc;
-    --glass-bg: rgba(15, 23, 42, 0.45);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --bg-color: #31112c; /* Deep berry background */
+    --text-primary: #fff0f5;
+    --text-secondary: #ffb3c6;
+    --accent-color: #ff4d6d;
+    --accent-secondary: #ff758f;
+    --accent-tertiary: #ff8fab;
+    --glass-bg: rgba(89, 13, 34, 0.45);
+    --glass-border: rgba(255, 143, 171, 0.25);
 }
 
 * {
@@ -18,8 +18,8 @@
 
 body {
     background-color: var(--bg-color);
-    /* Lightened the overlay so the background image is clearly visible */
-    background-image: linear-gradient(rgba(5, 11, 20, 0.2), rgba(5, 11, 20, 0.3)), url('wp3282481.jpg');
+    /* Warm berry overlay so the background image blends nicely */
+    background-image: linear-gradient(rgba(49, 17, 44, 0.4), rgba(49, 17, 44, 0.7)), url('wp3282481.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -51,7 +51,7 @@ h1, h2, h3 {
 /* Navigation */
 .glass-nav {
     padding: 1rem 0;
-    background: rgba(5, 11, 20, 0.7);
+    background: rgba(49, 17, 44, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
@@ -59,12 +59,14 @@ h1, h2, h3 {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin: 0;
-    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary), var(--accent-tertiary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
+    letter-spacing: 1.5px;
     text-decoration: none;
 }
 
@@ -132,12 +134,12 @@ h1, h2, h3 {
 .glass-card {
     border-radius: 28px;
     padding: 3.5rem 2rem;
-    /* Darkened the glass background to ensure text is readable over the clear image */
-    background: linear-gradient(145deg, rgba(15, 23, 42, 0.7), rgba(5, 11, 20, 0.9));
+    /* Beautiful berry glass gradient */
+    background: linear-gradient(145deg, rgba(89, 13, 34, 0.6), rgba(49, 17, 44, 0.85));
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
     border: 1px solid var(--glass-border);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,143,171,0.1);
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease, border-color 0.5s ease;
     position: relative;
     overflow: hidden;
@@ -166,11 +168,11 @@ h1, h2, h3 {
 
 /* Inner Glass Cards for About Section */
 .inner-glass {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(89, 13, 34, 0.5);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--glass-border);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -262,7 +264,7 @@ h1, h2, h3 {
 /* Footer */
 .glass-footer {
     padding: 4rem 2rem 3rem;
-    background: linear-gradient(to top, rgba(5,11,20,0.9), transparent);
+    background: linear-gradient(to top, rgba(49,17,44,0.9), transparent);
     margin-top: 6rem;
 }
 
@@ -327,7 +329,7 @@ h1, h2, h3 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(49, 17, 44, 0.85);
     backdrop-filter: blur(10px);
     z-index: 2000;
     display: none;
@@ -349,10 +351,10 @@ h1, h2, h3 {
     max-width: 480px;
     border-radius: 28px;
     padding: 3rem;
-    background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.95));
+    background: linear-gradient(145deg, rgba(89, 13, 34, 0.85), rgba(49, 17, 44, 0.95));
     backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
     z-index: 2001;
     display: none;
     opacity: 0;
@@ -432,7 +434,7 @@ h1, h2, h3 {
         margin-bottom: 3rem !important;
     }
     .navbar-collapse {
-        background: rgba(15, 23, 42, 0.95);
+        background: rgba(49, 17, 44, 0.95);
         backdrop-filter: blur(20px);
         border-radius: 16px;
         padding: 1.5rem;
